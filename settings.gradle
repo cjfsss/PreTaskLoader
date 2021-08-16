@@ -1,0 +1,3 @@
+include ':PreTask'
+include ':app'
+rootProject.name = "PreTaskLoader"
