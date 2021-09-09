@@ -16,6 +16,8 @@ public interface PreTask<T> extends Runnable {
     @NonNull
     MutableLiveData<T> getLiveData();
 
+    T getData();
+
     void post();
 
     void postValue(T data);

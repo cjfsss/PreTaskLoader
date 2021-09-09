@@ -50,6 +50,11 @@ public class PreTaskImpl<T> implements PreTask<T> {
     }
 
     @Override
+    public T getData() {
+        return getLiveData().getValue();
+    }
+
+    @Override
     public void post() {
         getLiveData().postValue(getLiveData().getValue());
     }

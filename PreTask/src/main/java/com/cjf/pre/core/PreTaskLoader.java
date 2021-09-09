@@ -503,6 +503,14 @@ public class PreTaskLoader<T> {
         }
     }
 
+    @Nullable
+    public final T getData(){
+        if (mLiveDataLoadTask == null) {
+            return null;
+        }
+        return mLiveDataLoadTask.getData();
+    }
+
     public final void post() {
         if (mLiveDataLoadTask != null) {
             mLiveDataLoadTask.post();
