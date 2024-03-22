@@ -91,7 +91,7 @@ allprojects {
 在 module 的 build.gradle 添加依赖
 
 ```groovy
-    api 'com.github.cjfsss:PreTaskLoader:0.0.1'
+    api 'com.github.cjfsss:PreTaskLoader:0.0.4'
     api 'androidx.appcompat:appcompat:1.3.0'
 ```
 
